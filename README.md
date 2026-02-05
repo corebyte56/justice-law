@@ -1,81 +1,20 @@
-Justice Law Website
-Project Overview
+# Justice Law Website
 
-Justice Law is a modern, responsive legal services website designed to provide users with comprehensive information about various legal practice areas. The website emphasizes a professional design, clean typography, and an intuitive layout, ensuring a smooth user experience across all devices.
+Justice Law is a responsive website that provides information about various legal practice areas. It is designed with a clean and professional layout to ensure a smooth user experience on all devices.v
 
-The project demonstrates the implementation of HTML5, CSS3, Flexbox, and Grid, along with Google Fonts (EB Garamond & Poppins) to create a visually appealing and mobile-friendly interface.
+## Installation
 
-Key Features
+Simply download or clone the project files to your local machine:
 
-Responsive Design: Adapts seamlessly to desktops, tablets, and mobile devices.
+```bash
+git clone <https://github.com/corebyte56/justice-law.git>
+```
 
-Banner Section: Eye-catching hero section with heading, descriptive text, and a search form.
+## Usage
 
-Legal Practice Section: Grid layout presenting different legal practice areas with images, headings, and descriptions.
+```python
+import Justice Law
 
-Navigation Menu: Fixed top navigation with links to main sections like Home, Services, Cases, Blog, and Contact.
-
-Interactive Buttons & Hover Effects: Stylish buttons with smooth hover transitions.
-
-Typography & Colors: Elegant fonts and color palette enhance readability and aesthetics.
-
-Technologies Used
-
-HTML5
-
-CSS3
-
-Flexbox & CSS Grid for layout
-
-Google Fonts: EB Garamond, Poppins
-
-Media Queries for responsive design
-
-Responsive Design Details
-
-Banner Section:
-
-Hero text scales down on smaller screens
-
-Search input and button stack vertically on mobile devices
-
-Flexible height ensures proper display across all screen sizes
-
-Legal Practice Section:
-
-Grid switches from 3 columns on desktop to 1 column on mobile
-
-Borders and spacing adjust for a clean mobile layout
-
-Screenshots
-
-(Replace placeholders with actual screenshots if available)
-
-Desktop View:
-
-
-Mobile View:
-
-
-Project Setup
-
-Clone the repository:
-
-git clone <repository-url>
-
-
-Navigate to the project folder:
-
-cd justice-law-website
-
-
-Open the website:
-Open index.html in your preferred web browser.
-
-Ensure assets are correctly linked:
-Confirm that styles/style.css and the images folder are in place.
-
-Folder Structure
 /justice-law-website
 │
 ├── images/            # All images (logo, banner, legal cards)
@@ -83,22 +22,32 @@ Folder Structure
 │   └── style.css      # Main CSS file
 └── index.html         # Main HTML file
 
-Contribution Guidelines
+```
+
+## Contributing
 
 Contributions are welcome! If you would like to contribute:
 
-Fork the repository
+1. Fork the repository
 
-Create a new branch (git checkout -b feature/your-feature)
+2. Create a new branch (git checkout -b feature/your-feature)
+```bash
+git checkout -b feature/responsive-banner-legal
+```
 
-Make your changes
+3. Make your changes
 
-Commit your changes (git commit -m "Add feature")
+4. Commit your changes (git commit -m "Add feature")
+```bash
+git commit -m "The banner and the Legal Practice section are now fully responsive for devices with a maximum width of 640px. Layouts, text sizes, and form elements adjust properly to fit smaller screens, ensuring a clean and user-friendly design on mobile devices."
 
-Push to the branch (git push origin feature/your-feature)
+```
+5. Push to the branch (git push origin feature/your-feature)
+```bash
+git push origin feature/responsive-banner-legal
+```
+6. Open a Pull Request
 
-Open a Pull Request
+## License
 
-License
-
-This project is open source and free to use for educational and personal purposes.
+[This project is open source and free to use for educational and personal purposes.](https://choosealicense.com/licenses/mit/)
