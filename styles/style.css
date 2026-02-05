@@ -1,3 +1,10 @@
+/* Shared style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .eb-garamond{
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
@@ -10,6 +17,138 @@
   font-style: normal;
 }
 
-h1 {
+p {
   font-family: "Poppins", sans-serif;
+}
+
+button {
+  padding: 18px 29px;
+  background-color: #B68C5A;
+  color: #FFFFFF;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #B68C5A;
+  border: 2px solid #B68C5A;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 1.125rem;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+header {
+  padding: 60px 0;
+}
+
+/* Nav style */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 30px;
+
+}
+
+/* .nav-btn button {
+  padding: 18px 29px;
+  background-color: #B68C5A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+} */
+
+#banner {
+  background-image: url(/images/banner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  border-radius: 8px;
+  margin-top: 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+#banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+
+
+.banner-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 0 20px;
+
+}
+
+.banner-content {
+  max-width: 600px;
+  text-align: center;
+}
+.banner-content h1 {
+  font-size: 4rem;
+  margin-bottom: 24px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.banner-content p {
+  font-size: 1rem;
+  line-height: 26px;
+  color: #CFCFCF;
+  font-weight: normal;
+}
+
+
+.banner-form {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+}
+
+.banner-form input[type="search"] {
+  padding: 18px 20px;
+  width: 400px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
 }
