@@ -16,11 +16,13 @@ git clone <https://github.com/corebyte56/justice-law.git>
 import Justice Law
 
 /justice-law-website
-│
-├── images/            # All images (logo, banner, legal cards)
-├── styles/
-│   └── style.css      # Main CSS file
-└── index.html         # Main HTML file
+├── index.html
+├── style.css       # CSS file root folder এ
+├── images/
+│    ├── banner.png
+│    └── business.png
+└── other assets...
+
 
 ```
 
