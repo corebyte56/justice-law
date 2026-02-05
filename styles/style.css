@@ -49,15 +49,28 @@ a {
   font-size: 1.125rem;
 }
 
+a:hover {
+  color: #B68C5A;
+}
+
 body {
   max-width: 1200px;
   margin: 0 auto; 
 }
 
-header {
-  padding: 60px 0;
+header, #legal-practice {
+  padding: 50px 0;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+/* ------------------------------------------------ */
 /* Nav style */
 nav {
   display: flex;
@@ -85,43 +98,38 @@ nav {
 
 #banner {
   background-image: url(/images/banner.png);
+  width: 100%;
+  height: 600px;                 /* figma height */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 600px;
   border-radius: 8px;
   margin-top: 70px;
   position: relative;
   overflow: hidden;
 }
 
+
 #banner::before {
   content: "";
   position: absolute;
-  inset: 0;
+   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
 }
 
-
-
 .banner-container {
-  height: 100%;
   display: flex;
+  margin: 100px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   position: relative;
-  z-index: 1;
-  height: 100%;
-  padding: 0 20px;
-
+  z-index: 2;
 }
 
 .banner-content {
-  max-width: 600px;
+  max-width: 800px;
   text-align: center;
 }
 .banner-content h1 {
@@ -151,4 +159,158 @@ nav {
   border: none;
   border-radius: 8px;
   font-size: 1rem;
+}
+
+/* Legal Practice section */
+
+.legal-content {
+  max-width: 1200px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.legal-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+  color: #333333;
+  font-weight: 700;
+}
+
+.legal-content p {
+  font-size: 1rem;
+  line-height: 26px;
+  color: #707070;
+  font-weight: normal;
+}
+
+.legal-cards {
+  display : grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.legal-card {
+
+  padding: 20px;
+  text-align: center;
+}
+
+.legal-card:not(:nth-child(3n)) {
+  border-right: 1px solid #E7E7E7;
+}
+
+.legal-card:nth-child(-n + 3) {
+  border-bottom: 1px solid #E7E7E7;
+}
+
+
+.legal-card .legal-card-img {
+  margin-top: 56px;
+  margin-bottom: 30px;
+}
+
+.legal-card h3 {
+  color: #414040;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+.legal-card p {
+  color: #707070;
+  font-size: 1rem;
+  line-height: 26px;
+  font-weight: normal;  
+}
+
+.legal-card .legal-card-frame {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 640px) {
+
+  nav {
+  flex-direction: column;
+  align-items: center;
+}
+  #banner {
+   width: 100%;
+    height: auto; /* height auto for flexible height */
+    border-radius: 0;
+    margin-top: 4%;
+    padding: 20px 0; /* extra padding for small screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .banner-container {
+   margin: 0 20px; /* side margin */
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .banner-content {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem; /* smaller font for mobile */
+    line-height: 2.5rem;
+    margin-bottom: 16px;
+    color: #fff;
+  }
+
+  .banner-content p {
+    font-size: 0.9rem;
+    line-height: 22px;
+    color: #CFCFCF;
+  }
+
+  .banner-form {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .banner-form input[type="search"] {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+
+  .src-btn {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 1rem;
+  }
+
+  .legal-cards {
+    grid-template-columns: 1fr;
+  }
+
+   .legal-card {
+    border-right: none !important;
+    border-bottom: 1px solid #E7E7E7;
+  }
+
+  .legal-card:last-child {
+    border-bottom: none;
+  }
+
+
 }
