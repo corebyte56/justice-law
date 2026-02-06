@@ -191,9 +191,15 @@ nav {
 }
 
 .legal-card {
-
   padding: 20px;
   text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.legal-card:hover {
+  background-color: #F5F5F5;
+  transform: translateY(-5px);
 }
 
 .legal-card:not(:nth-child(3n)) {
@@ -227,7 +233,6 @@ nav {
 .legal-card .legal-card-frame {
   margin-top: 30px;
   margin-bottom: 70px;
-  cursor: pointer;
 }
 
 /* ------------------------------------------------ */
